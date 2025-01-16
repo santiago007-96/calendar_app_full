@@ -31,7 +31,7 @@ const DashboardPage = () => {
     const [newEventColor, setNewEventColor] = useState<string>("");
     const [newEventTime, setNewEventTime] = useState<string>("");
     const [selectedDate, setSelectedDate] = useState<DateSelectArg | null>(null);
-    const [events, setEvents] = useState<string>();
+    const [events, setEvents] = useState<any>("");
 
 
 
