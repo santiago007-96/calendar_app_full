@@ -16,7 +16,7 @@ const authOptions = {
           placeholder: "********",
         },
       },
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         const userFound = await db.user.findUnique({
           where: {
             email: credentials.email,
